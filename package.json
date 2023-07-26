@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:laptop:chrome": "cypress run --headed --config-file cypress.config.js --browser chrome",
+    "test:laptop:edge": "cypress run --headed --config-file cypress.config.js --browser edge",
+    "test:mobile:chrome": "cypress run --headed  --config-file cypress.env.config.js --browser chrome",
+    "test:headless": "cypress run"
   },
   "keywords": [],
   "author": "",
